@@ -4,5 +4,8 @@
 // module
 // exports
 
-console.log(__dirname);
-console.log(__filename);
+// console.log(__dirname);
+// console.log(__filename);
+
+const data = require('./student')
+console.log(data)
