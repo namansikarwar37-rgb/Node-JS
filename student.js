@@ -3,4 +3,13 @@ const user = {
   city : "gwalior",
   phone : 987654321
 }
-module.exports = user;
+
+const abc = {
+  name : "Himanshu",
+  city : "morena",
+  phone : 987654321
+}
+module.exports = {
+  user,
+  abc
+}
