@@ -1,0 +1,57 @@
+asynchronous - simple meaning
+node.js kisi kam ke complete hone ka wait nhi krta wo durse kam start kr deta hai.
+
+1. Synchronous vs Asynchronous:
+
+Synchronous:
+
+console.log("1");
+console.log("2");
+console.log("3");
+
+Output:
+1
+2
+3
+
+Yahn kam one by one execute hota hai
+
+
+Asynchronous:
+
+console.log("1");
+setTimeout(() => {
+    console.log("2");
+}, 2000);
+
+console.log("3");
+
+Output:
+1
+3
+2
+
+setTimeout() ke liye node.js wait nhi krta. phle 3 print krta hai phir 2 seconds baad 2.
+
+2.Callback
+Callback ek function hota hai jo kisi dusre function ko argument ke roop mein diya jaata hai
+
+setTimeout(() => {
+    console.log("Task completed");
+}, 2000);
+
+yahn () => {..} callback function hai
+
+3. Callback Hell
+
+jb callbacks ke andr bht saare callbacks aa jaate hai, code difficult ho jaata hai.
+
+getuser(() => {
+  getOrders(() => {
+    getPayment(() => {
+      getProduct(() => {
+        
+      })
+    })
+  })
+})
