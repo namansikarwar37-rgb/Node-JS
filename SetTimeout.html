@@ -1,0 +1,22 @@
+<script>
+  function prom(a){
+    return new Promise((resolve,reject) => {
+      setTimeout(() => {
+        if(a){
+          resolve("yes")
+        }else{
+          reject("no")
+        }
+      }, 4000);
+    })
+  }
+
+  // console.log(prom(true))
+  prom(true).then((result) =>{
+    console.log(result)
+  }).catch((error) =>{
+    console.log(error)
+  })
+
+  console.log("hello gwalior")
+</script>
