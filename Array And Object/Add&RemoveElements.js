@@ -1,4 +1,4 @@
-let students = ["rahul", 'amit', "priya"];
+let students = ["rahul", "amit", "priya"];
 
 students.push("neha");
 console.log(students);
